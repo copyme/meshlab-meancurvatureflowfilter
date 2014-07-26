@@ -46,7 +46,8 @@ QString MeanCurvaureFlowPlugin::filterName(FilterIDType filterId) const
 QString MeanCurvaureFlowPlugin::filterInfo(FilterIDType filterId) const
 {
     switch(filterId) {
-    case FP_MOVE_VERTEX :  return QString("Move the vertices of the mesh along vertex normal according to curvature.");
+    case FP_MOVE_VERTEX :  return QString("Move the vertices of the mesh along vertex normal according to curvature.\n"
+                                          " Warrning: This version works only with closed meshes.");
     default : assert(0);
     }
     return QString("Unknown Filter");
