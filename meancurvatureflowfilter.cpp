@@ -69,8 +69,8 @@ void MeanCurvaureFlowPlugin::initParameterSet(QAction *action,MeshModel &m, Rich
         case FP_MOVE_VERTEX :
                                       parlst.addParam(new RichFloat("Time",
                                       0.01f,
-                                      "Max displacement",
-                                      "The vertex are displaced of a vector whose norm is bounded by this value"));
+                                      "Mean curvature factor",
+                                      "Value which will be multiplied with curvature."));
         break;
 
         default : assert(0);
